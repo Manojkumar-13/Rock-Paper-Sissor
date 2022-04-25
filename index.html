@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissor</title>
+</head>
+<!-- custom css -->
+<link rel="stylesheet" href="./styles/style.css">
+<body>
+  <div class="container">
+    <div class="details">
+      <div class="title">
+        <h1>
+          Rock
+          <br />
+          Paper
+          <br />
+          Scissor
+          <br />
+        </h1>
+      </div>
+      <div class="scores">
+        <h2>
+          Computer: <span id = "computer-score">0</span>
+        </h2>
+        <h2>User: <span id ="user-score">0</span></h2>
+      </div>
+    </div>
+    <div class="weapons">
+      <button class="weapon" onclick="gameLogic('rock')">Rock</button>
+      <button class="weapon" onclick="gameLogic('paper')">Paper</button>
+      <button class="weapon" onclick="gameLogic('scissor')">Scissor</button>
+    </div>
+    <div class="result">
+      <h2>You Selected <span id="user-option"></span></h2>
+      <h2>Computer Selected <span id="computer-option"></span></h2>
+      <h2 id="result"></h2>
+    </div>
+  </div>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(230, 235, 250);;;
+  color: #1c2042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+html{
+  font-size: 16px;
+}
+button{
+  outline: none;
+}
+h1, h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+h2 span{
+  font-weight:900;
+  
+}
+.container{
+  width: 90%;
+  max-width: 40rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 5px 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.title h1{
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.scores h2{
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.weapons{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.weapons button{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.25);
+  font-size: 1.1rem;
+  font-weight:600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.weapons button:hover{
+  box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
+}
+.result{
+  height: 15rem;
+  visibility: hidden;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.result.show{
+  visibility: visible;
+}
