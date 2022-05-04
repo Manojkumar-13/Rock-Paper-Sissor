@@ -44,20 +44,20 @@ if (computerWeapon === userWeapon.toLowerCase()){
   scoreUserEl.textContent = scoreUser;
 }
 }
-const game = function(){
-  while(i < 10){
-  if ((scoreComputer < 5) && (scoreUser < 5)){
-    gameLogic();
-    i = i+1;
-  }else{
-    if(scoreComputer > scoreUser){
-      console.log(`Computer wins with the score of ${scoreComputer}`)
-    }else{
-      console.log(`User wins with the score of ${scoreUser}`)
-    }
-    return;
-  }
+// const game = function(){
+//   while(i < 10){
+//   if ((scoreComputer < 5) && (scoreUser < 5)){
+//     gameLogic();
+//     i = i+1;
+//   }else{
+//     if(scoreComputer > scoreUser){
+//       console.log(`Computer wins with the score of ${scoreComputer}`)
+//     }else{
+//       console.log(`User wins with the score of ${scoreUser}`)
+//     }
+//     return;
+//   }
   
-}
-}
+// }
+// }
 // onclick events in html
